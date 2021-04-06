@@ -7,23 +7,23 @@ class SlugOptions
     /** @var array|callable */
     public $generateSlugFrom;
 
-    public string $slugField;
+    public $slugField;
 
-    public bool $generateUniqueSlugs = true;
+    public $generateUniqueSlugs = true;
 
-    public int $maximumLength = 250;
+    public $maximumLength = 250;
 
-    public bool $generateSlugsOnCreate = true;
+    public $generateSlugsOnCreate = true;
 
-    public bool $generateSlugsOnUpdate = true;
+    public $generateSlugsOnUpdate = true;
 
-    public bool $preventOverwrite = false;
+    public $preventOverwrite = false;
 
-    public string $slugSeparator = '-';
+    public $slugSeparator = '-';
 
-    public string $slugLanguage = 'en';
+    public $slugLanguage = 'en';
 
-    public array $translatableLocales = [];
+    public $translatableLocales = [];
 
     public static function create(): self
     {
